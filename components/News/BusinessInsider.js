@@ -4,7 +4,7 @@ import { Text } from "native-base";
 import NewsItem from "./NewsItem";
 
 import { connect } from "react-redux";
-import { getNewsBusinessInsider } from "../../store/actions/news";
+import { getNewsBusinessInsider } from "../../store/actions";
 
 class NewsBusinessInsider extends Component {
   componentDidMount() {
@@ -53,11 +53,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
   getNewsBusinessInsider,
 };
-// getCrypto,
-// getStock,
-// setSymbol,
-// setTab,
-// showAutoSuggest,
 
 export default connect(
   mapStateToProps,

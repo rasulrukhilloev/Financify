@@ -8,31 +8,23 @@ import {
 import { Content, Text, View } from "native-base";
 import { connect } from "react-redux";
 
-import { Colors } from "../constants/colors";
-import { Ranges } from "../constants/ranges";
-import { TextStrings } from "../constants/textStrings";
-import {
-  getCrypto,
-  getStock,
-  setSymbol,
-  setTab,
-  showAutoSuggest,
-} from "../store/actions";
+import { Colors } from "../../constants/colors";
+import { Ranges } from "../../constants/ranges";
+import { TextStrings } from "../../constants/textStrings";
+import { getStock, showAutoSuggest } from "../../store/actions";
 
 import {
   formatPercentage,
   positiveOrNegative,
   upOrDownSymbol,
-} from "../helpers/priceFormat";
+} from "../../helpers/priceFormat";
 
-import ListHeader from "./ListHeader";
+// import ListHeader from "../ListHeader";
 
 class List extends Component {
   onPress = (symbol) => {
     this.props.getStock(symbol, Ranges.ONE_MONTH);
-    // this.props.setSymbol(symbol);
     // this.props.showAutoSuggest(false);
-    // this.props.setTab(1);
     this.props.navigation.navigate("Stock");
   };
 
@@ -163,15 +155,11 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = (state) => ({
-  crypto: state.crypto,
   symbol: state.symbol,
 });
 
 const mapDispatchToProps = {
-  getCrypto,
   getStock,
-  setSymbol,
-  setTab,
   showAutoSuggest,
 };
 

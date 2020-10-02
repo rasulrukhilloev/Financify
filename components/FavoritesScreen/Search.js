@@ -3,9 +3,9 @@ import { StyleSheet, TouchableOpacity } from "react-native";
 import { Icon, Item, Input, View } from "native-base";
 import { connect } from "react-redux";
 
-import { Colors } from "../constants/colors";
-import { Ranges } from "../constants/ranges";
-import { getStock, setSymbol, showAutoSuggest } from "../store/actions";
+import { Colors } from "../../constants/colors";
+import { Ranges } from "../../constants/ranges";
+import { getStock, setSymbol, showAutoSuggest } from "../../store/actions";
 
 class Search extends Component {
   state = { hideAutoSuggest: false };
@@ -38,7 +38,7 @@ class Search extends Component {
         <Input
           autoCapitalize="characters"
           autoCorrect={false}
-          // clearButtonMode="always"
+          clearButtonMode="always"
           keyboardAppearance="dark"
           onChangeText={(symbol) => this.onChangeText(symbol)}
           onSubmitEditing={this.onSubmitEditing}

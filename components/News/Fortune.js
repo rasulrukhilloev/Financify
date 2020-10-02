@@ -3,16 +3,14 @@ import { FlatList, RefreshControl } from "react-native";
 import { Text } from "native-base";
 import NewsItem from "./NewsItem";
 
-import * as Linking from "expo-linking"; //RN Linking does not work in expo managed workflow
-
 import { connect } from "react-redux";
-import { getNewsBloomberg } from "../../store/actions/news";
+import { getNewsFortune } from "../../store/actions";
 
-class NewsBloomberg extends Component {
+class NewsFortune extends Component {
   componentDidMount() {
-    this.props.getNewsBloomberg();
+    this.props.getNewsFortune();
   }
-  onRefresh = () => this.props.getNewsBloomberg();
+  onRefresh = () => this.props.getNewsFortune();
 
   refreshControl = (loading) => (
     <RefreshControl
@@ -24,7 +22,7 @@ class NewsBloomberg extends Component {
   );
 
   render() {
-    const { data, latestUpdate, loading } = this.props.bloomberg;
+    const { data, latestUpdate, loading } = this.props.fortune;
     return (
       <>
         {data.length === 0 && (
@@ -48,18 +46,12 @@ class NewsBloomberg extends Component {
     );
   }
 }
-
 const mapStateToProps = (state) => {
-  return { bloomberg: state.bloomberg };
+  return { fortune: state.fortune };
 };
 
 const mapDispatchToProps = {
-  getNewsBloomberg,
+  getNewsFortune,
 };
-// getCrypto,
-// getStock,
-// setSymbol,
-// setTab,
-// showAutoSuggest,
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewsBloomberg);
+export default connect(mapStateToProps, mapDispatchToProps)(NewsFortune);

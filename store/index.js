@@ -13,13 +13,6 @@ const persistConfig = {
   whitelist: ["favorites"],
 };
 
-// const client = axios.create({
-//   baseURL: "https://sandbox.iexapis.com",
-//   responseType: "json",
-//   params: {
-//     token: "Tpk_276212fa09cb4b8c93b65c37fb9297cc",
-//   },
-// });
 const clients = {
   default: {
     client: axios.create({
@@ -36,6 +29,15 @@ const clients = {
       responseType: "json",
       params: {
         apiKey: "c9e36bb4c6e74895985ceb146f80fa7c",
+      },
+    }),
+  },
+  finnhub: {
+    client: axios.create({
+      baseURL: "https://finnhub.io/api/v1",
+      responseType: "json",
+      params: {
+        token: "btpo65f48v6rdq37iacg",
       },
     }),
   },

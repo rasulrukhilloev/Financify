@@ -13,14 +13,9 @@ import { connect } from "react-redux";
 import Constants from "expo-constants";
 import { TouchableHighlight } from "react-native";
 
-import { Colors } from "../constants/colors";
-import { Ranges } from "../constants/ranges";
-import {
-  getStock,
-  getSymbols,
-  setSymbol,
-  showAutoSuggest,
-} from "../store/actions";
+import { Colors } from "../../constants/colors";
+import { Ranges } from "../../constants/ranges";
+import { getStock, getSymbols, showAutoSuggest } from "../../store/actions";
 
 class AutoSuggest extends Component {
   state = {
@@ -42,7 +37,6 @@ class AutoSuggest extends Component {
 
   onPress = (symbol) => {
     this.props.getStock(symbol, Ranges.ONE_MONTH);
-    // this.props.setSymbol(symbol);
     this.props.showAutoSuggest(false);
     this.setState({ filteredSearch: [] });
     Keyboard.dismiss();
@@ -141,7 +135,6 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = {
   getStock,
   getSymbols,
-  setSymbol,
   showAutoSuggest,
 };
 

@@ -4,13 +4,13 @@ import { Text } from "native-base";
 import NewsItem from "./NewsItem";
 
 import { connect } from "react-redux";
-import { getNewsFortune } from "../../store/actions/news";
+import { getNewsFinancialPost } from "../../store/actions";
 
-class NewsFortune extends Component {
+class NewsFinancialPost extends Component {
   componentDidMount() {
-    this.props.getNewsFortune();
+    this.props.getNewsFinancialPost();
   }
-  onRefresh = () => this.props.getNewsFortune();
+  onRefresh = () => this.props.getNewsFinancialPost();
 
   refreshControl = (loading) => (
     <RefreshControl
@@ -22,7 +22,7 @@ class NewsFortune extends Component {
   );
 
   render() {
-    const { data, latestUpdate, loading } = this.props.fortune;
+    const { data, latestUpdate, loading } = this.props.financial_post;
     return (
       <>
         {data.length === 0 && (
@@ -47,16 +47,11 @@ class NewsFortune extends Component {
   }
 }
 const mapStateToProps = (state) => {
-  return { fortune: state.fortune };
+  return { financial_post: state.financial_post };
 };
 
 const mapDispatchToProps = {
-  getNewsFortune,
+  getNewsFinancialPost,
 };
-// getCrypto,
-// getStock,
-// setSymbol,
-// setTab,
-// showAutoSuggest,
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewsFortune);
+export default connect(mapStateToProps, mapDispatchToProps)(NewsFinancialPost);

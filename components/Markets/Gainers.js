@@ -1,22 +1,21 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getMostActive } from "../store/actions";
+import { getGainers } from "../../store/actions";
 
 import List from "./List";
 
-class MostActive extends Component {
-  onRefresh = () => this.props.getMostActive();
+class Gainers extends Component {
+  onRefresh = () => this.props.getGainers();
 
   componentDidMount() {
-    this.props.getMostActive();
+    this.props.getGainers();
   }
 
   render() {
-    const { data, latestUpdate, loading } = this.props.mostActive;
-
+    const { data, latestUpdate, loading } = this.props.gainers;
     return (
       <List
-        headerTitle="Most Active"
+        headerTitle="Gainers"
         latestUpdate={latestUpdate}
         loading={loading}
         list={data}
@@ -28,11 +27,11 @@ class MostActive extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  mostActive: state.mostActive,
+  gainers: state.gainers,
 });
 
 const mapDispatchToProps = {
-  getMostActive,
+  getGainers,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MostActive);
+export default connect(mapStateToProps, mapDispatchToProps)(Gainers);

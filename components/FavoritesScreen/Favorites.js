@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { clearFavorites, getFavorites } from "../store/actions";
-import { TextStrings } from "../constants/textStrings";
+import { clearFavorites, getFavorites } from "../../store/actions";
+import { TextStrings } from "../../constants/textStrings";
 
-import List from "./List";
+import List from "../Markets/List";
 
 import Search from "./Search";
 import AutoSuggest from "./AutoSuggest";
