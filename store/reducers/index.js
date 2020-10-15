@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 
-import { stock } from "./stock";
-import { symbol } from "./symbol";
-import { symbols } from "./symbols";
-import { favorites } from "./favorites";
-import { autoSuggest } from "./autoSuggest";
+import { stock } from "./markets/stock";
+import { symbol } from "./favorites/symbol";
+import { symbols } from "./favorites/symbols";
+import { favorites } from "./favorites/favorites";
+import { autoSuggest } from "./favorites/autoSuggest";
 
 import { gainers } from "./markets/gainers";
 import { losers } from "./markets/losers";
@@ -17,6 +17,8 @@ import { wall_street_journal } from "./news/wall_street_journal";
 import { fortune } from "./news/fortune";
 
 import { ipo } from "./calendars/ipo";
+import { earnings } from "./calendars/earnings";
+import { economic } from "./calendars/economic";
 
 export default combineReducers({
   stock,
@@ -36,4 +38,6 @@ export default combineReducers({
   fortune,
 
   ipo,
+  earnings,
+  economic,
 });

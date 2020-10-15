@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
@@ -6,10 +6,10 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 import { Colors } from "../constants/colors";
 
-import IPO from "../components/Calendars/IPO";
 import NewsTabScreen from "./NewsNavigator";
 import favStackScreen from "./FavoritesNavigator";
 import MarketsTabScreen from "./MarketsNavigator";
+import CalendarsTabScreen from "./CalendarsNavigator";
 
 const MainTab = createBottomTabNavigator();
 
@@ -60,7 +60,7 @@ const MainNavigation = () => (
       />
       <MainTab.Screen
         name="Calendars"
-        component={IPO}
+        component={CalendarsTabScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons

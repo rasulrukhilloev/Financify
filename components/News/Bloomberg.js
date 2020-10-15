@@ -28,7 +28,7 @@ class NewsBloomberg extends Component {
     return (
       <>
         {data.length === 0 && (
-          <Text>{"There are either no news or error while updating"}</Text>
+          <Text style={{textAlign: 'center'}}>{"Updating news ..."}</Text>
         )}
         <FlatList //using FlastList over List(native-base) coz the latter is depricated
           refreshControl={this.refreshControl(loading)}

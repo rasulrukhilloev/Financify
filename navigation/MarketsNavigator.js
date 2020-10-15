@@ -14,7 +14,7 @@ const activeStack = createStackNavigator();
 const MarketsTab = createMaterialTopTabNavigator();
 
 const loserStackScreen = () => (
-  //remove refresh control from Stock component as it hinders modal
+  //remove refresh control from Stock component as it hinders modal mode
   <loserStack.Navigator mode="modal" headerMode="none">
     <loserStack.Screen name="Losers" component={Losers} />
     <loserStack.Screen name="Stock" component={Stock} />
