@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "financify-2",
+    "slug": "financify-2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.financify"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
