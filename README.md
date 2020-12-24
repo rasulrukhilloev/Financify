@@ -13,4 +13,39 @@ yarn install
 #start development server <br />
 yarn start
 <br /><br />
-# Screens:
+# Screens: 
+Install and see for more screens. Most screens are displayed below:
+Favorites Screen             |  Search in Favorites
+:-------------------------:|:-------------------------:
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/1.favorites.png" width="300">  |  <img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/2.search.png" width="300">
+
+Loser Stocks Screen             |  Active Stocks Screen
+:-------------------------:|:-------------------------:
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/3.losers.png" width="300">  |  <img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/4.active.png" width="300">
+
+News (Business Insider) Screen             |  News Details (BI) Screen
+:-------------------------:|:-------------------------:
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/5.news_bi.png" width="300">  |  <img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/6.news_details.png" width="300">
+
+News (Financial Post) Screen             |  IPO Calendars Screen
+:-------------------------:|:-------------------------:
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/7.news_fp.png" width="300">  |  <img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/8.ipo.png" width="300">
+
+IPO Calendars Date Screen             |  Earnings Calendar Screen
+:-------------------------:|:-------------------------:
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/9.ipo_date.png" width="300">  |  <img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/10.earnings.png" width="300">
+
+Economic Calendar Screen             |  Economic Details Screen
+:-------------------------:|:-------------------------:
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/11.economic.png" width="300">  |  <img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/12.economic_details.png" width="300">
+
+Financial Planner Screen             |  Financial Planner Screen  
+:-------------------------:|:-------------------------:
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/13.planner1.png" width="300">  |  <img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/14.planner2.png" width="300">
+
+Financial Planner Screen              |  Financial Planner Screen  
+:-------------------------:|:-------------------------:
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/15.planner3.png" width="300">  |  <img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/16.planner4.png" width="300">
+
+<img src="https://github.com/rasulrukhilloev/Financify/blob/master/assets/gihub_images/17.planner5.png" width="300">
+
