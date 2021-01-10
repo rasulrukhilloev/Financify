@@ -13,6 +13,16 @@ yarn install
 #start development server <br />
 yarn start
 <br /><br />
+# Developed with:
+[React Native](https://reactnative.dev/)
+[Expo](https://docs.expo.io/)
+[Redux](https://redux.js.org/)
+[NativeBase](https://nativebase.io/)
+<br />APIs used:
+[NewsAPI](https://newsapi.org/)
+[IEX Cloud](https://iexcloud.io/)
+[Finnhub API](https://finnhub.io/)
+<br /><br />
 # Screens: 
 Install and see for more screens. Most screens are displayed below:
 Favorites Screen             |  Search in Favorites
