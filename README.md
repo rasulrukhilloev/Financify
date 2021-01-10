@@ -14,14 +14,14 @@ yarn install
 yarn start
 <br /><br />
 # Developed with:
-[React Native](https://reactnative.dev/)
-[Expo](https://docs.expo.io/)
-[Redux](https://redux.js.org/)
-[NativeBase](https://nativebase.io/)
-<br />APIs used:
-[NewsAPI](https://newsapi.org/)
-[IEX Cloud](https://iexcloud.io/)
-[Finnhub API](https://finnhub.io/)
+[React Native](https://reactnative.dev/)<br />
+[Expo](https://docs.expo.io/)<br />
+[Redux](https://redux.js.org/)<br />
+[NativeBase](https://nativebase.io/)<br />
+<br />APIs used:<br />
+[NewsAPI](https://newsapi.org/)<br />
+[IEX Cloud](https://iexcloud.io/)<br />
+[Finnhub API](https://finnhub.io/)<br />
 <br /><br />
 # Screens: 
 Install and see for more screens. Most screens are displayed below:
